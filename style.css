@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -169,9 +169,9 @@ body{
 }
 
 .error-message{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.7);
-    margin: 10px;
+    margin: 10px 25px;
 }
 
 

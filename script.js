@@ -17,7 +17,13 @@ async function getCityWeather(city){
         const response=await fetch(URL);
 
         if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+
+            if (response.status=="400"){
+
+                throw new Error(`We cant find weather information for "${city}"`);
+
+            } else throw new Error(`HTTP error! Status: ${response.status}`);
+
         }
 
         const data=await response.json();
@@ -56,18 +62,14 @@ async function showWeather(city) {
 
 }
 
+
 function clearInput(){
     if(searchBox.value!="") searchBox.value="";
-}
-
-function showElements(){
-    
 }
 
 async function getInput(event){
 
     const city = searchBox.value.trim();
-    
     
     if ((event.type === "keyup" && event.key == "Enter")||event.type==="click"){
 
@@ -81,8 +83,6 @@ async function getInput(event){
         
     }
     
-    
-
 }
 
 clearInput();
