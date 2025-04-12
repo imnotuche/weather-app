@@ -6,6 +6,7 @@
     <title>Today's Weather</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
 
@@ -19,11 +20,21 @@
                 <i class='bx bxs-map'></i>
             </button>
 
-            <input type="text" class="search-city" placeholder="Enter a city name">
+            <input type="text" class="search-city" placeholder="Search a city, state, or country">
             
             <button class="search-button">
                 <i class='bx bx-search'></i>
             </button>
+
+        </div>
+
+        <!--Multiple results(if any)-->
+        <div class="option-container">
+
+            <p class="search-response">
+                There are multiple locations around the world named city, 
+                select the one you're searching for
+            </p>
 
         </div>
 
@@ -55,7 +66,7 @@
                     <div class="wind-speed-text">
 
                         <p class="wind-speed"></p>
-                        <p>Wind speed</p>
+                        <p>Wind</p>
 
                     </div>
 
