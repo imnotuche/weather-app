@@ -16,15 +16,27 @@
         <!--to search city-->
         <div class="search-container">
 
-            <button class="location">
+            <button class="location" title="Approximate current location">
                 <i class='bx bxs-map'></i>
             </button>
 
             <input type="text" class="search-city" placeholder="Search a city, state, or country">
             
-            <button class="search-button">
+            <button class="search-button" title="Search city">
                 <i class='bx bx-search'></i>
             </button>
+
+        </div>
+
+        <!--loading animation-->
+        <div class="loading">
+
+            <div class="circle" id="a"></div>
+            <div class="circle" id="b"></div>
+            <div class="circle" id="c"></div>
+            <div class="circle" id="d"></div>
+
+            <p class="loading-message"></p>
 
         </div>
 
@@ -32,13 +44,13 @@
         <div class="option-container">
 
             <p class="search-response">
-                There are multiple locations around the world named city, 
+                we found x results for <span>city</span>, 
                 select the one you're searching for
             </p>
 
         </div>
 
-        <!--weather info of the city search-->
+        <!--weather info of the city searched-->
         <div class="weather-details">
 
             <img src="" class="weather-icon">
