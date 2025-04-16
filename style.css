@@ -9,6 +9,7 @@
 
 body{
     min-height: 100vh;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,26 +165,30 @@ body{
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.user-option:hover .option-name, .user-option:hover .option-type{
-    color: rgba(0, 0, 0, 0.5);
+.user-option:hover .option-name{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.user-option:hover .option-type{
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .option-name{
     text-align: center;
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    transition: color 0.3s;
+    transition: color 0.3s, font-size 0.3s;
 }
 
 .option-type{
     text-align: right;
     padding: 0px 20px;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.4);
     width: 100%;
     margin-bottom: 5px;
-    transition: color 0.3s;
+    transition: color 0.3s, font-size 0.3s;
 }
 
 .weather-details{

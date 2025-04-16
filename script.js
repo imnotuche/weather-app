@@ -59,6 +59,7 @@ async function getCityWeather(latitude, longitude){
 
 
 function showLoading(show=true){
+
     if(show){
 
         loading.classList.add('display');
@@ -67,7 +68,9 @@ function showLoading(show=true){
         error.classList.remove('display');
 
     } else loading.classList.remove('display');
+
 }
+
 
 
 async function showOptions(search) {
@@ -206,7 +209,7 @@ async function getInput(event){
             weatherDetails.classList.remove('display');
             errorMessage.textContent="Search field is empty!";
             error.classList.add('display');
-     
+            
         } else {
             await showOptions(city);
         }
