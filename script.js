@@ -251,7 +251,7 @@ try{
         isCelsius = !isCelsius;
     });
 
-    cityName.textContent=(`${weather.location.country} (approximate location)`).toUpperCase();
+    cityName.textContent=(`${weather.location.region}, ${weather.location.country} (approximate location)`).toUpperCase();
     weatherInfo.textContent=weather.current.condition.text;
     humidity.innerHTML=`${Math.round(weather.current.humidity)}<span>%</span>`;
     windSpeed.innerHTML=`${Math.round(weather.current.wind_kph)}<span>km/h</span>`;
