@@ -12,9 +12,9 @@ const cityName=document.querySelector('.city-name');
 const weatherInfo=document.querySelector('.weather-info');
 const humidity=document.querySelector('.humidity');
 const windSpeed=document.querySelector('.wind-speed');
-const WEATHER_API_KEY="7570efae07684e95a00165420250604";    //https://www.weatherapi.com/
-const CITY_API_KEY="e9c0aae4d6b04f0ca196a2c40961e066";      //https://opencagedata.com/
-const LOCATION_API_KEY="f866dcf601df4331acc8d602c14876ca";  //https://www.geoapify.com/
+const WEATHER_API_KEY="";    //get yours from https://www.weatherapi.com/
+const CITY_API_KEY="";      //get yours from https://opencagedata.com/
+const LOCATION_API_KEY="";  //get yours from https://www.geoapify.com/
 const error=document.querySelector('.error');
 const errorMessage=document.querySelector('.error-message');
 
