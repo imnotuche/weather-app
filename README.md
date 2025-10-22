@@ -37,7 +37,3 @@ You need API keys for all three services. They are hardcoded inside the frontend
 ## How to Run
 
 Just open `index.html` in your browser (no server needed).
-
----
-
-my apologies for lack of comments in this project---rookie mistake  (might fix later)
